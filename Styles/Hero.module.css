@@ -1,0 +1,17 @@
+#box{
+    animation: anime-1 1s ease alternate;
+}
+
+
+@keyframes anime-1 {
+    from{
+        position: relative;
+        left: -100%;
+        rotate: (30deg);
+        
+    }
+    to{
+        position: relative;
+        left: 0;
+    }
+}
