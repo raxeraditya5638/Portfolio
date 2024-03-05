@@ -1,7 +1,7 @@
 "use client";
 import style from "@/Styles/Loginpage.module.css";
 import { FormEvent, useState } from "react";
-import { SignInResponse, signIn, useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -28,10 +28,15 @@ const Loginpage = () => {
         redirect: false,
       });
 
+      if (res?.ok){
+        console.log('login succesfully')
+      }
+
       if (res?.error) {
         error: form.error;
         console.log("errror errorrrrr");
       }
+      router.replace("dashboard");
     } catch (error) {}
   };
 
@@ -70,7 +75,7 @@ const Loginpage = () => {
               </div>
               <input
                 id={style.ip3}
-                type="text"
+                type="email"
                 className="rounded-lg font-semibold text-black py-2 px-4 border-2"
                 onChange={(e) => {
                   setForm({

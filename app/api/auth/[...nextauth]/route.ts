@@ -2,7 +2,7 @@ import NextAuth from "next-auth/next";
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { connectdb } from "@/lib/mongodb";
-import { userModel } from "@/models/user";
+import { userModel}  from "@/models/user";
 
 
 

@@ -15,7 +15,7 @@ const Development = () => {
                 <div className="image">
                   <Image
                     className="rounded-lg"
-                    src={"/Images/img.jpg"}
+                    src={"/Images/crimage.jpg"}
                     height={200}
                     width={200}
                     alt="image"
