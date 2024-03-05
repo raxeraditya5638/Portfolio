@@ -34,3 +34,30 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+use package
+"dependencies": {
+"bcryptjs": "^2.4.3",
+"framer-motion": "^11.0.5",
+"gsap": "^3.12.5",
+"mongoose": "^8.1.2",
+"next": "14.1.0",
+"next-auth": "^4.24.6",
+"react": "^18",
+"react-dom": "^18"
+},
+"devDependencies": {
+"@types/bcryptjs": "^2.4.6",
+"@types/node": "^20",
+"@types/react": "^18",
+"@types/react-dom": "^18",
+"autoprefixer": "^10.0.1",
+"eslint": "^8",
+"eslint-config-next": "14.1.0",
+"postcss": "^8",
+"tailwindcss": "^3.3.0",
+"typescript": "^5"
+}
+
+NEXTAUTH_SECRET=openssl rand -base64 32 replace the ssl text
+NEXTAUTH_URL=http://localhost:3000 or site base url
