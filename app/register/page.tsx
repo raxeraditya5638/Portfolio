@@ -46,7 +46,7 @@ const page = () => {
       });
       if (res.ok) {
         const form = e.target;
-        form.reset();
+
         router.push("/");
       } else {
         console.log("error during registration");

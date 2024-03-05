@@ -22,7 +22,9 @@ const Navbar = () => {
                 className="rounded-full"
               ></Image>
             </div>
-            <Link href={"/"}>Aditya</Link>
+            <div className="link hidden sm:inline">
+              <Link href={"/"}>Aditya</Link>
+            </div>
           </div>
           <div
             className="Right hidden sm:flex justify-between items-center text-2xl"
@@ -32,7 +34,7 @@ const Navbar = () => {
               <li>
                 <button>
                   <Link
-                    href={""}
+                    href={"/contactus"}
                     className="rounded-xl text-white hover:underline"
                   >
                     Contact Us
@@ -42,7 +44,7 @@ const Navbar = () => {
               <li>
                 <button>
                   <Link
-                    href={""}
+                    href={"/development"}
                     className="rounded-xl text-white hover:underline"
                   >
                     Deveplopment
